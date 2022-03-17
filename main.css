@@ -14,6 +14,7 @@ body {
   background-color: #e5e5e5;
 }
 
+section,
 header {
   height: auto;
   background-image: url(./img/mobilebg.PNG);
@@ -57,10 +58,16 @@ p {
   margin: 12px 0;
 }
 
-.social h2 {
+.social-icons {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.social a {
   color: #7f8cff;
 }
 
-.social-icons a:not(:first-child) {
+.social-icons li {
   padding: 1em;
 }

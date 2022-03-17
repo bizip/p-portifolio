@@ -1,32 +1,39 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Portifolio project
+
 > This is a portifolio project that was implemented from the figma design
+
 ## Built With
 
 - HTML5
 - CSS3
--Figma design template
+  -Figma design template
+
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
+
 ### Prerequisites
-#### You need to have a git installed
-#### You need to have a basic knowledge about HTML and CSS
+
+You need to have a git installed
+You need to have a basic knowledge about HTML and CSS
+
 ### Setup
 
-#### clone  this project (using git clone https://github.com/bizip/hello-world.git) to your local computer and use telminal to navigate into the parent directory of this project.
+#### clone this project (using git clone https://github.com/bizip/hello-world.git) to your local computer and use telminal to navigate into the parent directory of this project.
+
 ### Install
 
 #### Run npm install
+
 ### Usage
 
 If you have live server visual studio code etension installed open this project with live server
+
 ## Authors
 
 👤 **Author1**
-
-
 
 - GitHub: [@githubhandle](https://github.com/bizip)
 - Twitter: [@twitterhandle](https://twitter.com/BizimunguPasca9)
