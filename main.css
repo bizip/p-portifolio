@@ -49,6 +49,8 @@ header {
   line-height: normal;
   display: flex;
   align-items: stretch;
+  text-decoration: none;
+  color: #344563;
 }
 
 p {
