@@ -14,7 +14,17 @@ body {
   background-color: #f7f7f9;
 }
 
-.landing,
+.landing {
+  height: auto;
+  background-image: url(./img/mobilebg.PNG);
+  background-size: cover;
+  background-position: left;
+  padding: 0 2rem 0 2rem;
+  padding-top: 2rem;
+  border-radius: 0 0 0 120px;
+  padding-bottom: 5rem;
+}
+
 header {
   height: auto;
   background-image: url(./img/mobilebg.PNG);
@@ -71,7 +81,9 @@ p {
 }
 
 .social-icons li {
-  padding: 1em;
+  padding-right: 1em;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .card {
@@ -106,6 +118,48 @@ p {
   left: 16px;
   top: 16px;
   background: url("./img/work_image.PNG");
+  border-radius: 8px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 12px 0;
+}
+
+.card-header1 {
+  position: static;
+  width: 295px;
+  height: 220px;
+  left: 16px;
+  top: 16px;
+  background: url("./img/gym.png");
+  border-radius: 8px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 12px 0;
+}
+
+.card-header2 {
+  position: static;
+  width: 295px;
+  height: 220px;
+  left: 16px;
+  top: 16px;
+  background: url("./img/multpost.png");
+  border-radius: 8px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 12px 0;
+}
+
+.card-header3 {
+  position: static;
+  width: 295px;
+  height: 220px;
+  left: 16px;
+  top: 16px;
+  background: url("./img/proffessional.png");
   border-radius: 8px;
   flex: none;
   order: 0;
@@ -227,6 +281,7 @@ p {
 }
 
 .about {
+  border-radius: 0 130px 0 0;
   margin-top: 2rem;
   position: relative;
   background: #fff;
@@ -306,7 +361,7 @@ p {
   flex: none;
   order: 0;
   flex-grow: 0;
-  margin: 0 8px;
+  margin-right: 8px;
 }
 
 .content_btn li p {
