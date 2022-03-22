@@ -287,7 +287,7 @@ p {
   background: #fff;
   padding-right: 6vw;
   padding-left: 6vw;
-  padding-bottom: 1rem;
+  padding-bottom: 8rem;
   padding-top: 1rem;
 }
 
@@ -434,7 +434,6 @@ p {
   background-repeat: no-repeat;
   padding: 2rem 24px;
   border-radius: 5rem 0 0 0;
-  margin-top: 4rem;
 }
 
 .form_header_title {
@@ -476,4 +475,8 @@ p {
   font-size: 15px;
   line-height: 24px;
   border: 1px solid #cfd8dc;
+}
+
+.form_header {
+  margin-top: 103px;
 }
