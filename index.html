@@ -277,16 +277,16 @@
             <p class="form_header_p">If you have an application you are interested in developing, a feature that you
                 need built or a project that needs coding. I’d love to help with it </p>
         </div>
-        <form action="#">
+        <form action="https://formspree.io/f/xpzbleyv" method="post">
             <ul>
                 <li>
-                    <label for="name"><input type="text" placeholder="Yelemias" /></label>
+                    <label for="name"><input type="text" name="name" placeholder="Yelemias" required maxlength="30"/></label>
                 </li>
                 <li>
-                    <label for="email"><input type="email" placeholder="yelemias@gmail.com" /></label>
+                    <label for="email"><input type="email" name="email" placeholder="yelemias@gmail.com" required /></label>
                 </li>
                 <li>
-                    <label for="text-area"><textarea class="text-area" type="text" placeholder="Write your message here" ></textarea></label>
+                    <label for="text-area"><textarea class="text-area" name="subject" type="text" placeholder="Write your message here" required maxlength="500"></textarea></label>
                 </li>
                 <li class="btn">
                     <button type="submit">Get In Touch</button>
