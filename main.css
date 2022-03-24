@@ -1,4 +1,19 @@
-* {
+/* media query manager */
+
+/* 
+0-600px:mobile phone
+6000-900px:tablet portrait
+9000-1200px:tablet Land scape
+12000-1800px:tablet Desktop
+18000+ Big desktop
+
+*/
+
+/* ================================ */
+
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -16,7 +31,7 @@ body {
 
 .landing {
   height: auto;
-  background-image: url(./img/mobilebg.PNG);
+  background-image: url(./img/bg-img.PNG);
   background-size: cover;
   background-position: left;
   padding: 0 2rem 0 2rem;
@@ -25,14 +40,14 @@ body {
   padding-bottom: 5rem;
 }
 
-header {
-  height: auto;
-  background-image: url(./img/mobilebg.PNG);
-  background-size: cover;
+/* header {
+  height: auto; */
+/* background-image: url(./img/mobilebg.PNG); */
+/* background-size: cover;
   background-position: left;
   padding: 0 2rem 0 2rem;
   padding-top: 2rem;
-}
+} */
 
 .navigation {
   display: flex;
@@ -500,4 +515,100 @@ p {
   font-weight: 500;
   border-radius: 8px;
   border: 0;
+}
+.for-desktop {
+  display: none;
+}
+@media (min-width: 900px) {
+  html {
+    font-size: 62.5%;
+  }
+  .navigation {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+  }
+  .for-mobile {
+    display: none;
+  }
+  .menu {
+    display: flex;
+    list-style: none;
+  }
+  .menu li {
+    margin-right: 2rem;
+    color: #344563;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 20px;
+  }
+  .for-desktop {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    text-align: center;
+  }
+  .logo-text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  .landing {
+    height: auto;
+    background-image: url(./img/bg-img.PNG);
+    background-size: cover;
+    background-position: left;
+
+    background-repeat: no-repeat;
+    padding: 0 2rem 0 2rem;
+    padding-top: 2rem;
+    border-radius: 0 0 0 120px;
+    padding-bottom: 5rem;
+  }
+  .menu {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .header-title .header-text {
+    position: static;
+    width: 920px;
+    height: 122px;
+    left: 0px;
+    top: 0px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 0.37px;
+    margin: 20.4rem 10rem 0 10rem;
+  }
+  .details {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 28px;
+    color: #344563;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0 10rem 0 10rem;
+    width: 80%;
+  }
+  .social {
+    margin: 0 10rem 0 10rem;
+  }
+  .card {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+  }
 }
