@@ -611,4 +611,11 @@ p {
     flex-direction: row;
     width: auto;
   }
+  .nav_link {
+    display: block;
+  }
+  .nav_link:hover {
+    color: #396df2;
+    transform: translateY(-3px);
+  }
 }
