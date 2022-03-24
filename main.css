@@ -556,7 +556,15 @@ p {
     display: flex;
     align-items: center;
     text-align: center;
+    animation-name: spinner;
+    animation-duration: 1.5s;
   }
+
+  @keyframes spinner {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+  }
+
   .landing {
     height: auto;
     background-image: url(./img/bg-img.PNG);
@@ -569,10 +577,12 @@ p {
     border-radius: 0 0 0 120px;
     padding-bottom: 5rem;
   }
+
   .menu {
     display: flex;
     justify-content: flex-end;
   }
+  
   .header-title .header-text {
     position: static;
     width: 920px;
