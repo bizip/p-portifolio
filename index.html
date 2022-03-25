@@ -14,20 +14,31 @@
 </head>
 
 <body>
-    <header class="header">
-        <nav class="navigation">
-            <div class="logo">
-                <p class="logo-text">Pascal</p>
-            </div>
-            <div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="logo-text" viewBox="0 0 24 24">
-                    <path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z" />
-                </svg></div>
-        </nav>
-    </header>
     <section class="landing">
+        <header class="header">
+            <nav class="navigation">
+                <div class="logo">
+                    <p class="logo-text">Pascal</p>
+                </div>
+                <div class="for-mobile"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="logo-text"
+                        viewBox="0 0 24 24">
+                        <path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z" />
+                    </svg>
+                </div>
+                <div class="for-desktop"> 
+                    <ul class="menu">
+                        <li><a href="#"></a>Portfolio</li>
+                        <li><a href="#"></a>About</li>
+                        <li><a href="#"></a>Contact</li>
+    
+    
+                    </ul>
+                 </div>
+            </nav>
+        </header>
         <div class="content-header">
             <div class="header-title">
-                <h1><a href="#" class="header-text">I'am Bizimungu Glad to see you!</a></h1>
+                <h1><a href="#" class="header-text"><span>I'am Bizimungu </span> <span>Glad to see you!</span></a></h1>
             </div>
             <div class="details">
                 <p>I’m a software developer! I can help you build a product ,
@@ -280,20 +291,23 @@
         <form action="https://formspree.io/f/xpzbleyv" method="post">
             <ul>
                 <li>
-                    <label for="name"><input type="text" name="name" placeholder="Yelemias" required maxlength="30"/></label>
+                    <label for="name"><input type="text" name="name" id="name" placeholder="Yelemias" required
+                            maxlength="30" /></label>
                 </li>
                 <li>
-                    <label for="email"><input type="email" name="email" placeholder="yelemias@gmail.com" required /></label>
+                    <label for="email"><input type="email" name="email" id="email" placeholder="yelemias@gmail.com"
+                            required /></label>
                 </li>
                 <li>
-                    <label for="text-area"><textarea class="text-area" name="subject" type="text" placeholder="Write your message here" required maxlength="500"></textarea></label>
+                    <label><textarea class="text-area" name="subject" placeholder="Write your message here" required
+                            maxlength="500"></textarea></label>
                 </li>
                 <li class="btn">
                     <button type="submit">Get In Touch</button>
                 </li>
-              </ul>
-          </form>
-      </section>
+            </ul>
+        </form>
+    </section>
 
 
 </body>
