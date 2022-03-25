@@ -387,6 +387,43 @@ button {
   border: 1px solid #cfd8dc;
   border-radius: 8px;
 }
+
+.form_header_title {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #fff;
+}
+
+.form_header_p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #ebebff;
+}
+
+.contact-form form ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form form input {
+  padding: 20px 20px;
+  margin: 15px 0;
+  height: 48px;
+  width: 95%;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+}
+
 .text-area {
   height: 170px;
   width: 95%;
@@ -584,7 +621,7 @@ button {
   .btn {
     align-self: center !important;
   }
-  .nav_link {
+  HEAD .nav_link {
     display: block;
   }
   .nav_link:hover {
@@ -594,7 +631,6 @@ button {
   .zig-zag img {
     order: 1;
   }
-
   .language-list li {
     display: flex;
     flex-direction: column;
