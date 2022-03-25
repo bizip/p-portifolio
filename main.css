@@ -101,6 +101,11 @@ p {
   flex-wrap: wrap;
 }
 
+.social {
+  padding: 0;
+  margin: 0 1rem 3rem 1rem;
+}
+
 .social a {
   color: #7f8cff;
 }
@@ -142,6 +147,16 @@ p {
   font-size: 3.2rem;
   line-height: 44px;
   color: #172b4d;
+}
+
+#hoving:hover,
+#hoving1:hover,
+#hoving2:hover,
+#hoving3:hover,
+#hoving4:hover,
+#hoving5:hover {
+  background-color: #396df2;
+  color: #fff;
 }
 
 .single_work_specific {
@@ -328,36 +343,6 @@ button {
   width: 89px;
 }
 
-.see-project {
-  display: flex;
-  padding: 12px;
-  width: 150px;
-  height: 48px;
-  left: 0;
-  top: calc(50% - 48px / 2);
-  justify-content: center;
-  border: 1px solid #6070ff;
-  box-sizing: border-box;
-  border-radius: 8px;
-}
-
-.see {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #396df2;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: 0 10px;
-  text-decoration: none;
-}
-
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -442,7 +427,7 @@ button {
 
 .content-header {
   padding: 0;
-  margin: 5rem 1rem;
+  margin: 12rem 2rem 3rem 1rem;
 }
 
 @media (min-width: 900px) {
@@ -533,8 +518,6 @@ button {
     flex: none;
     order: 1;
     flex-grow: 0;
-
-    /* margin: 0 10rem 0 10rem; */
     width: 80%;
   }
 
@@ -548,6 +531,7 @@ button {
 
   .single_work {
     grid-template-columns: repeat(2, 1fr);
+    max-height: 100rem;
   }
 
   .single_work_details {
@@ -569,11 +553,11 @@ button {
 
   .about {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 4fr 6fr;
   }
 
   .about-me {
-    padding: 5.2rem 1.7rem 5.6rem 5.2rem;
+    padding: 5.2rem 1rem 5.6rem 5.2rem;
   }
 
   .languages {
@@ -585,17 +569,17 @@ button {
     flex-direction: row;
   }
 
-  .language-list li {
-    margin-right: 1.2rem;
-  }
-
   .content-header {
     padding: 0;
-    margin: 17rem 10rem 0 10rem;
+    margin: 26rem 10rem 0 10rem;
   }
 
   .contact-form {
     align-items: center;
+  }
+
+  .contact-form form {
+    width: 50%;
   }
 
   .form_header {
@@ -604,5 +588,18 @@ button {
 
   .btn {
     align-self: center !important;
+  }
+
+  .zig-zag img {
+    order: 1;
+  }
+
+  .language-list li {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    height: auto;
+    margin-bottom: 4rem;
+    margin-right: 1.2rem;
   }
 }
