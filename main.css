@@ -726,6 +726,8 @@ button {
     justify-content: space-between;
     margin-left: 5rem;
     margin-right: 5rem;
+    align-items: center;
+    text-align: center;
   }
 
   .for-mobile {
@@ -874,7 +876,7 @@ button {
   .btn {
     align-self: center !important;
   }
-  HEAD .nav_link {
+  .nav_link {
     display: block;
   }
   .nav_link:hover {
@@ -898,7 +900,8 @@ button {
   .navigation {
     margin-top: 1rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-left: 10rem;
   }
   .for-mobile {
     display: none;
@@ -986,7 +989,6 @@ button {
     flex: none;
     order: 1;
     flex-grow: 0;
-    margin: 0 10rem 0 10rem;
     width: 80%;
   }
   .social {
@@ -1004,8 +1006,11 @@ button {
     color: #396df2;
     transform: translateY(-3px);
   }
+  .nav_link {
+    text-decoration: none;
+    color: #344563;
+  }
 }
-
 .card-image {
   transition: all 0.3s ease-in;
 }
