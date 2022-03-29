@@ -198,6 +198,7 @@ p {
 
 .single_work_stack li {
   float: left;
+  margin-right: 15px;
   list-style: none;
   padding: 0.4rem 1.2rem;
   background: #ebebff;
