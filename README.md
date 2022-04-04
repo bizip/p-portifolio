@@ -6,7 +6,7 @@
 
 # Link to live project
 
-##[Pascal portifolio](https://bizip.github.io/p-portifolio/)
+## [Pascal portifolio](https://bizip.github.io/p-portifolio/)
 
 ## Built With
 
