@@ -152,16 +152,10 @@ p {
   line-height: 44px;
   color: #172b4d;
 }
-
-/* #hoving:hover,
-#hoving1:hover,
-#hoving2:hover,
-#hoving3:hover,
-#hoving4:hover,
-#hoving5:hover {
+.hoved:hover{
   background-color: #396df2;
   color: #fff;
-} */
+}
 
 .single_work_specific {
   display: flex;
@@ -705,7 +699,7 @@ p {
 
   .content-header {
     padding: 0;
-    margin: 26rem 10rem 0 10rem;
+    margin: 24rem 10rem 0 10rem;
   }
 
   .contact-form {
