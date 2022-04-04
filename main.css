@@ -152,7 +152,8 @@ p {
   line-height: 44px;
   color: #172b4d;
 }
-.hoved:hover{
+
+.hoved:hover {
   background-color: #396df2;
   color: #fff;
 }
