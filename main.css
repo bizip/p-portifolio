@@ -626,6 +626,16 @@ p {
   margin: 12rem 2rem 3rem 1rem;
 }
 
+.navigation {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+  align-items: center;
+  text-align: center;
+}
+
 @media (min-width: 900px) {
   html {
     font-size: 62.5%;
