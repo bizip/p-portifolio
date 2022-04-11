@@ -853,8 +853,8 @@ p {
     background-color: #6070fff5;
     width: 100vw;
     height: 100vh;
-    display: fixed;
-    
+    display: none;
+    padding: 2.8rem;
 }
 .page-popup__link{
    text-decoration: none;
@@ -862,7 +862,6 @@ p {
     font-size: 3.2rem;
     line-height: 4.4rem;
     color: #fff;
-    top: 50%;
 }
 .popup-page__icon{
     width: 100vw;
