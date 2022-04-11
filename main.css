@@ -847,3 +847,27 @@ p {
 .card-image:hover {
   transform: scale(1.2);
 }
+/* mobile popup */
+.popup-page{
+    position: absolute;
+    background-color: #6070fff5;
+    width: 100vw;
+    height: 100vh;
+    display: fixed;
+    
+}
+.page-popup__link{
+   text-decoration: none;
+    font-weight: 600;
+    font-size: 3.2rem;
+    line-height: 4.4rem;
+    color: #fff;
+    top: 50%;
+}
+.popup-page__icon{
+    width: 100vw;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 2.5rem 3rem;
+    fill: #fff;
+}
