@@ -641,8 +641,6 @@ p {
   position: fixed;
   background-color: #6070ffd5;
   backdrop-filter: blur(6px);
-
-  /* opacity: 0.98; */
   width: 100vw;
   height: 100vh;
   display: none;
@@ -652,17 +650,16 @@ p {
 
 .page-popup__link {
   text-decoration: none;
-  font-weight: 600;
+  font-style: normal;
+  font-weight: 400;
   font-size: 3.2rem;
-  line-height: 4.4rem;
   color: #fff;
-  padding-top: 4rem;
 }
 
 .popup-page__icon {
   display: flex;
   flex-direction: row-reverse;
-  padding: 62px 38px;
+  padding: 1rem 2.5rem;
   fill: #fff;
 }
 
@@ -671,7 +668,7 @@ p {
 }
 
 .popup-page__nav li:not(:first-child) {
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 
 @media (min-width: 900px) {

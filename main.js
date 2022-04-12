@@ -8,11 +8,13 @@ function myToggler() {
     humbergur.style.display = 'block';
     popupPage.style.display = 'none';
     closeButton.style.display = 'none';
+    document.body.style.overflow = 'auto';
   } else {
     popupPage.classList.add('pop-menu');
     humbergur.style.display = 'none';
     popupPage.style.display = 'block';
     closeButton.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
   }
 }
 humbergur.addEventListener('click', myToggler);
