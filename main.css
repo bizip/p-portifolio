@@ -641,6 +641,7 @@ p {
   position: fixed;
   background-color: #6070ffd5;
   backdrop-filter: blur(6px);
+
   /* opacity: 0.98; */
   width: 100vw;
   height: 100vh;
@@ -664,9 +665,11 @@ p {
   padding: 62px 38px;
   fill: #fff;
 }
-.popup-page__nav li{
+
+.popup-page__nav li {
   list-style: none;
 }
+
 .popup-page__nav li:not(:first-child) {
   margin-top: 4rem;
 }
