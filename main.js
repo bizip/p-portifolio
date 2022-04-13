@@ -106,7 +106,7 @@ const documentIsLoaded = () => {
   popupBtn.forEach((el) => {
     el.addEventListener('click', (e) => {
       const search = projectSection.find((id) => id.id === +e.target.dataset.id);
-      console.log(search);
+      singlePopupSection.style.display = 'block'
     });
   });
 };

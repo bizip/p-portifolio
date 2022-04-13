@@ -878,7 +878,6 @@ p {
   }
 
   .popup-window {
-    display: none;
     backdrop-filter: blur(8px);
     min-width: 100%;
     min-height: 80vh;
