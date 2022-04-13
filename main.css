@@ -150,7 +150,7 @@ p {
   font-weight: 700;
   font-size: 3.2rem;
   line-height: 44px;
-  color: #172b4d;
+  /* color: #172b4d; */
 }
 
 .hoved:hover {
@@ -643,7 +643,6 @@ p {
   backdrop-filter: blur(6px);
   width: 100vw;
   height: 100vh;
-  display: none;
   padding: 2.8rem;
   z-index: 1000;
 }
@@ -876,6 +875,85 @@ p {
     display: flex;
     flex-direction: row;
     width: auto;
+  }
+
+  .popup-window {
+    display: none;
+    backdrop-filter: blur(8px);
+    min-width: 100%;
+    min-height: 80vh;
+    padding: 5rem 10rem;
+    position: absolute;
+  }
+
+  .Popup-window__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .Popup-window__header .toggle-h3 {
+    color: #67798E;
+  }
+
+  .popup-window__mult-post {
+    width: 100%;
+    height: auto;
+  }
+
+  .for-popup {
+    padding: 2.4rem;
+    z-index: 10;
+    background: #FFFFFF;
+    border: 1px solid #EBECF0;
+    box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+    border-radius: 16px;
+  }
+
+  .popup__container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 5.9rem 2.4rem;
+  }
+
+  .popup-details p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 3rem;
+    color: #344563;
+    margin: 0;
+  }
+
+  .popup__buttons {
+    padding: 0 1rem;
+  }
+  .popup__buttons .single_work_stack{
+    padding-top: 1.2rem;
+  }
+  .popup-links{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+  }
+  .popup-links li button{
+    padding: 2px 6px !important;
+   padding: 0;
+   width: auto;
+   font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .popup-links li button span{
+    padding-left: 2px;
   }
 }
 

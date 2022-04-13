@@ -22,3 +22,93 @@ closeButton.addEventListener('click', myToggler);
 popupLinks.forEach((popupPage) => {
   popupPage.addEventListener('click', myToggler);
 });
+
+// script for popup
+const documentIsLoaded = () => {
+  const languages = ['html', 'css', 'javaScript', 'github', 'Ruby', 'Bootstraps'];
+  const projectSection = [
+    {
+      id: 1,
+      name: 'Tonic',
+      description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      image: './img/gh.svg',
+      featured: ['CANOPY', 'Back End Dev', '2015'],
+      linkToLive: 'https://bizip.github.io/p-portifolio/',
+      linkToSource: 'https://github.com/bizip/p-portifolio',
+      popupData: {
+        languages: ['html', 'css', 'javaScript', 'github', 'Ruby', 'Bootstraps'],
+      },
+    },
+    {
+      id: 2,
+      name: 'Multi-Post Stories',
+      description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      image: './img/gh.svg',
+      featured: ['CANOPY', 'Back End Dev', '2015'],
+      linkToLive: 'https://bizip.github.io/p-portifolio/',
+      linkToSource: 'https://github.com/bizip/p-portifolio',
+      popupData: {
+        languages,
+      },
+    },
+    {
+      id: 3,
+      name: 'Facebook 360',
+      description: 'Exploring the future of media in Facebooks first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
+      image: './img/gh.svg',
+      featured: ['Facebook', 'Full stack Dev', '2015'],
+      linkToLive: 'https://bizip.github.io/p-portifolio/',
+      linkToSource: 'https://github.com/bizip/p-portifolio',
+      popupData: {
+        languages,
+      },
+    },
+    {
+      id: 4,
+      name: 'Uber Navigation',
+      description: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+      image: './img/gh.svg',
+      featured: ['Uber', 'Full stack Dev', '2015'],
+      linkToLive: 'https://bizip.github.io/p-portifolio/',
+      linkToSource: 'https://github.com/bizip/p-portifolio',
+      popupData: {
+        languages,
+      },
+    },
+  ];
+  const workCard = document.getElementById('work__card');
+  const closePopup = document.getElementById('toggle-h3');
+  // closePopup.addEventListener('click', () => {
+  //   // document.querySelector(".popup-window").style.display = 'none'
+  // })
+  workCard.innerHTML = projectSection.map((el, index) => `   <article class="single_work">
+    <img src="./img/gh.svg" class="card-image" alt="TONIC services" />
+    <div class="single_work_details">
+        <h3>${el.name}</h3>
+        <div class="single_work_specific">
+        
+            <h6>${el.featured[0]}</h6>
+            <p>${el.featured[1]}</p>
+            <p>${el.featured[2]}</p>
+        </div>
+        <p>${el.description}</p>
+        <ul class="single_work_stack">
+            <li>${el.popupData.languages[0]}</li>
+            <li>${el.popupData.languages[1]}</li>
+            <li>${el.popupData.languages[2]}</li>
+        </ul>
+        <button type="submit" data-id=${el.id} class="hoved dataTarget">See Project</button>
+    </div>
+  
+  </article>`).join('');
+  const singlePopupSection = document.querySelector('.popup-window');
+  const popupBtn = document.querySelectorAll('.dataTarget');
+  popupBtn.forEach((el) => {
+    el.addEventListener('click', (e) => {
+      const search = projectSection.find((id) => id.id === +e.target.dataset.id);
+      console.log(search);
+    });
+  });
+};
+
+window.onload = documentIsLoaded;
