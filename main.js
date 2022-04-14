@@ -104,6 +104,18 @@ const documentIsLoaded = () => {
       const search = projectSection.find((id) => id.id === +e.target.dataset.id);
       singlePopupSection.style.display = 'block';
       document.body.style.overflowY = 'hidden';
+       singlePopupSection.innerHTML = `
+      <div class="for-popup">
+          <div class="Popup-window__header">
+              <h3>${search.name}</h3>
+              <h3 class="toggle-h3" id="toggle-h3">X</h3>
+          </div class="popup-scrolly">
+          <div class="single_work_specific">
+              <h6>${search.featured[0]}</h6>
+              <p>${search.featured[1]}</p>
+              <p>${search.featured[2]}</p>
+          </div>
+       <div>
 };
 
 window.onload = documentIsLoaded;
