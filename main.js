@@ -97,6 +97,8 @@ const documentIsLoaded = () => {
     </div>
   
   </article>`).join('');
+  const singlePopupSection = document.querySelector(".popup-window");
+  const popupBtn = document.querySelectorAll(".dataTarget");
 };
 
 window.onload = documentIsLoaded;
