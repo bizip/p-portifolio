@@ -43,7 +43,7 @@ const documentIsLoaded = () => {
       id: 2,
       name: 'Multi-Post Stories',
       description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-      image: './img/gh.svg',
+      image: './img/pro.svg',
       featured: ['CANOPY', 'Back End Dev', '2015'],
       linkToLive: 'https://bizip.github.io/p-portifolio/',
       linkToSource: 'https://github.com/bizip/p-portifolio',
@@ -55,7 +55,7 @@ const documentIsLoaded = () => {
       id: 3,
       name: 'Facebook 360',
       description: 'Exploring the future of media in Facebooks first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
-      image: './img/gh.svg',
+      image: './img/work_image.PNG',
       featured: ['Facebook', 'Full stack Dev', '2015'],
       linkToLive: 'https://bizip.github.io/p-portifolio/',
       linkToSource: 'https://github.com/bizip/p-portifolio',
@@ -67,7 +67,7 @@ const documentIsLoaded = () => {
       id: 4,
       name: 'Uber Navigation',
       description: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
-      image: './img/gh.svg',
+      image: './img/multpost.PNG',
       featured: ['Uber', 'Full stack Dev', '2015'],
       linkToLive: 'https://bizip.github.io/p-portifolio/',
       linkToSource: 'https://github.com/bizip/p-portifolio',
@@ -77,12 +77,8 @@ const documentIsLoaded = () => {
     },
   ];
   const workCard = document.getElementById('work__card');
-  const closePopup = document.getElementById('toggle-h3');
-  // closePopup.addEventListener('click', () => {
-  //   // document.querySelector(".popup-window").style.display = 'none'
-  // })
-  workCard.innerHTML = projectSection.map((el, index) => `   <article class="single_work">
-    <img src="./img/gh.svg" class="card-image" alt="TONIC services" />
+  workCard.innerHTML = projectSection.map((el, index) => `   <article class="single_work ${(index % 2 !== 0) ? 'zig-zag' : ''}">
+    <img src="${el.image}" class="card-image" alt="TONIC services" />
     <div class="single_work_details">
         <h3>${el.name}</h3>
         <div class="single_work_specific">
@@ -101,14 +97,6 @@ const documentIsLoaded = () => {
     </div>
   
   </article>`).join('');
-  const singlePopupSection = document.querySelector('.popup-window');
-  const popupBtn = document.querySelectorAll('.dataTarget');
-  popupBtn.forEach((el) => {
-    el.addEventListener('click', (e) => {
-      const search = projectSection.find((id) => id.id === +e.target.dataset.id);
-      singlePopupSection.style.display = 'block'
-    });
-  });
 };
 
 window.onload = documentIsLoaded;
