@@ -116,6 +116,10 @@ const documentIsLoaded = () => {
               <p>${search.featured[2]}</p>
           </div>
        <div>
+             <img src="${search.image}" class="popup-window__mult-post" alt="Mult post">
+       <div class="popup__container">
+           <div class="popup-details">
+               <p>${search.
 };
 
 window.onload = documentIsLoaded;
