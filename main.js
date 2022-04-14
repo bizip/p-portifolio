@@ -99,6 +99,11 @@ const documentIsLoaded = () => {
   </article>`).join('');
   const singlePopupSection = document.querySelector(".popup-window");
   const popupBtn = document.querySelectorAll(".dataTarget");
+   popupBtn.forEach((el) => {
+    el.addEventListener('click', (e) => {
+      const search = projectSection.find((id) => id.id === +e.target.dataset.id);
+      singlePopupSection.style.display = 'block';
+      document.body.style.overflowY = 'hidden';
 };
 
 window.onload = documentIsLoaded;
