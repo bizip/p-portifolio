@@ -97,8 +97,7 @@ const documentIsLoaded = () => {
   const workCard = document.getElementById('work__card');
   workCard.innerHTML = projectSection
     .map(
-      (el, index) => `   <article class="single_work ${
-        index % 2 !== 0 ? 'zig-zag' : ''
+      (el, index) => `   <article class="single_work ${index % 2 !== 0 ? 'zig-zag' : ''
       }">
     <img src="${el.image}" class="card-image" alt="TONIC services" />
     <div class="single_work_details">
@@ -115,8 +114,7 @@ const documentIsLoaded = () => {
             <li>${el.popupData.languages[1]}</li>
             <li>${el.popupData.languages[2]}</li>
         </ul>
-        <button type="submit" data-id=${
-  el.id
+        <button type="submit" data-id=${el.id
 } class="hoved dataTarget">See Project</button>
     </div>
   
@@ -182,6 +180,17 @@ const documentIsLoaded = () => {
         document.body.style.overflowY = 'auto';
       });
     });
+  });
+
+  // form validation
+  const formInput = document.getElementById('contact-form');
+  const formName = document.getElementById('name').value;
+  const formEmail = document.getElementById('email').value;
+  const displayMessage = document.getElementById('message');
+  const formDescription = document.getElementById('contact-description').value;
+
+  formInput.addEventListener('submit', (e) => {
+    e.preventDefault();
   });
 };
 
