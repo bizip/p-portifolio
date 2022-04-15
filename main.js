@@ -1,103 +1,104 @@
-const popupPage = document.querySelector('.popup-page');
-const humbergur = document.querySelector('.pophumbergur');
-const popupLinks = document.querySelectorAll('.page-popup__link');
-const closeButton = document.querySelector('.popup-page__icon');
+const popupPage = document.querySelector(".popup-page");
+const humbergur = document.querySelector(".pophumbergur");
+const popupLinks = document.querySelectorAll(".page-popup__link");
+const closeButton = document.querySelector(".popup-page__icon");
 function myToggler() {
-  if (popupPage.classList.contains('pop-menu')) {
-    popupPage.classList.remove('pop-menu');
-    humbergur.style.display = 'block';
-    popupPage.style.display = 'none';
-    closeButton.style.display = 'none';
-    document.body.style.overflow = 'auto';
+  if (popupPage.classList.contains("pop-menu")) {
+    popupPage.classList.remove("pop-menu");
+    humbergur.style.display = "block";
+    popupPage.style.display = "none";
+    closeButton.style.display = "none";
+    document.body.style.overflow = "auto";
   } else {
-    popupPage.classList.add('pop-menu');
-    humbergur.style.display = 'none';
-    popupPage.style.display = 'block';
-    closeButton.style.display = 'flex';
-    document.body.style.overflow = 'hidden';
+    popupPage.classList.add("pop-menu");
+    humbergur.style.display = "none";
+    popupPage.style.display = "block";
+    closeButton.style.display = "flex";
+    document.body.style.overflow = "hidden";
   }
 }
-humbergur.addEventListener('click', myToggler);
-closeButton.addEventListener('click', myToggler);
+humbergur.addEventListener("click", myToggler);
+closeButton.addEventListener("click", myToggler);
 popupLinks.forEach((popupPage) => {
-  popupPage.addEventListener('click', myToggler);
+  popupPage.addEventListener("click", myToggler);
 });
 
 // script for popup
 const documentIsLoaded = () => {
   const languages = [
-    'html',
-    'css',
-    'javaScript',
-    'github',
-    'Ruby',
-    'Bootstraps',
+    "html",
+    "css",
+    "javaScript",
+    "github",
+    "Ruby",
+    "Bootstraps",
   ];
   const projectSection = [
     {
       id: 1,
-      name: 'Tonic',
+      name: "Tonic",
       description:
-        'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-      image: './img/gh.svg',
-      featured: ['CANOPY', 'Back End Dev', '2015'],
-      linkToLive: 'https://bizip.github.io/p-portifolio/',
-      linkToSource: 'https://github.com/bizip/p-portifolio',
+        "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+      image: "./img/gh.svg",
+      featured: ["CANOPY", "Back End Dev", "2015"],
+      linkToLive: "https://bizip.github.io/p-portifolio/",
+      linkToSource: "https://github.com/bizip/p-portifolio",
       popupData: {
         languages: [
-          'html',
-          'css',
-          'javaScript',
-          'github',
-          'Ruby',
-          'Bootstraps',
+          "html",
+          "css",
+          "javaScript",
+          "github",
+          "Ruby",
+          "Bootstraps",
         ],
       },
     },
     {
       id: 2,
-      name: 'Multi-Post Stories',
+      name: "Multi-Post Stories",
       description:
-        'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-      image: './img/pro.svg',
-      featured: ['CANOPY', 'Back End Dev', '2015'],
-      linkToLive: 'https://bizip.github.io/p-portifolio/',
-      linkToSource: 'https://github.com/bizip/p-portifolio',
+        "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+      image: "./img/pro.svg",
+      featured: ["CANOPY", "Back End Dev", "2015"],
+      linkToLive: "https://bizip.github.io/p-portifolio/",
+      linkToSource: "https://github.com/bizip/p-portifolio",
       popupData: {
         languages,
       },
     },
     {
       id: 3,
-      name: 'Facebook 360',
+      name: "Facebook 360",
       description:
-        'Exploring the future of media in Facebooks first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
-      image: './img/work_image.PNG',
-      featured: ['Facebook', 'Full stack Dev', '2015'],
-      linkToLive: 'https://bizip.github.io/p-portifolio/',
-      linkToSource: 'https://github.com/bizip/p-portifolio',
+        "Exploring the future of media in Facebooks first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
+      image: "./img/work_image.PNG",
+      featured: ["Facebook", "Full stack Dev", "2015"],
+      linkToLive: "https://bizip.github.io/p-portifolio/",
+      linkToSource: "https://github.com/bizip/p-portifolio",
       popupData: {
         languages,
       },
     },
     {
       id: 4,
-      name: 'Uber Navigation',
+      name: "Uber Navigation",
       description:
-        'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
-      image: './img/multpost.PNG',
-      featured: ['Uber', 'Full stack Dev', '2015'],
-      linkToLive: 'https://bizip.github.io/p-portifolio/',
-      linkToSource: 'https://github.com/bizip/p-portifolio',
+        "A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.",
+      image: "./img/multpost.PNG",
+      featured: ["Uber", "Full stack Dev", "2015"],
+      linkToLive: "https://bizip.github.io/p-portifolio/",
+      linkToSource: "https://github.com/bizip/p-portifolio",
       popupData: {
         languages,
       },
     },
   ];
-  const workCard = document.getElementById('work__card');
+  const workCard = document.getElementById("work__card");
   workCard.innerHTML = projectSection
     .map(
-      (el, index) => `   <article class="single_work ${index % 2 !== 0 ? 'zig-zag' : ''
+      (el, index) => `   <article class="single_work ${
+        index % 2 !== 0 ? "zig-zag" : ""
       }">
     <img src="${el.image}" class="card-image" alt="TONIC services" />
     <div class="single_work_details">
@@ -114,22 +115,23 @@ const documentIsLoaded = () => {
             <li>${el.popupData.languages[1]}</li>
             <li>${el.popupData.languages[2]}</li>
         </ul>
-        <button type="submit" data-id=${el.id
-} class="hoved dataTarget">See Project</button>
+        <button type="submit" data-id=${
+          el.id
+        } class="hoved dataTarget">See Project</button>
     </div>
   
-  </article>`,
+  </article>`
     )
-    .join('');
-  const singlePopupSection = document.querySelector('.popup-window');
-  const popupBtn = document.querySelectorAll('.dataTarget');
+    .join("");
+  const singlePopupSection = document.querySelector(".popup-window");
+  const popupBtn = document.querySelectorAll(".dataTarget");
   popupBtn.forEach((el) => {
-    el.addEventListener('click', (e) => {
+    el.addEventListener("click", (e) => {
       const search = projectSection.find(
-        (id) => id.id === +e.target.dataset.id,
+        (id) => id.id === +e.target.dataset.id
       );
-      singlePopupSection.style.display = 'block';
-      document.body.style.overflowY = 'hidden';
+      singlePopupSection.style.display = "block";
+      document.body.style.overflowY = "hidden";
       singlePopupSection.innerHTML = `
       <div class="for-popup">
           <div class="Popup-window__header">
@@ -175,22 +177,31 @@ const documentIsLoaded = () => {
        </div>
       </div>
       `;
-      singlePopupSection.addEventListener('click', () => {
-        singlePopupSection.style.display = 'none';
-        document.body.style.overflowY = 'auto';
+      singlePopupSection.addEventListener("click", () => {
+        singlePopupSection.style.display = "none";
+        document.body.style.overflowY = "auto";
       });
     });
   });
 
   // form validation
-  const formInput = document.getElementById('contact-form');
-  const formName = document.getElementById('name').value;
-  const formEmail = document.getElementById('email').value;
-  const displayMessage = document.getElementById('message');
-  const formDescription = document.getElementById('contact-description').value;
+  const formInput = document.getElementById("contact-form");
+  const formName = document.getElementById("name").value;
+  const formEmail = document.getElementById("email").value;
+  const displayMessage = document.querySelector(".message");
+  const messageContent = document.getElementById("message");
+  const formDescription = document.getElementById("contact-description").value;
 
-  formInput.addEventListener('submit', (e) => {
+  function hasUpperCase(input) {
+    return input.toLowerCase() !== input;
+  }
+  formInput.addEventListener("submit", (e) => {
     e.preventDefault();
+    if (hasUpperCase(formEmail)) {
+      displayMessage.style.display = "flex";
+      messageContent.innerHTML =
+        "Kindly make sure email address is in small letters";
+    }
   });
 };
 
