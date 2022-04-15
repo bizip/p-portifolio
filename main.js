@@ -185,6 +185,9 @@ const documentIsLoaded = () => {
   // form validation
   const formInput = document.getElementById('contact-form');
   const formEmail = document.getElementById('email');
+  const formName = document.getElementById('name');
+  const formDescription = document.getElementById('contact-description');
+
   const displayMessage = document.querySelector('.message');
   const messageContent = document.getElementById('message');
 
@@ -199,6 +202,12 @@ const documentIsLoaded = () => {
         displayMessage.style.display = 'none';
       }, 3000);
     } else {
+      const data = {
+        name: formName.value,
+        email: formEmail.value,
+        description: formDescription.value,
+      };
+      localStorage.setItem('dataSaved', JSON.stringify(data));
       displayMessage.style.display = 'flex';
       messageContent.style.color = '#6070ff';
       messageContent.textContent = 'Success, I will get back to you soon.';
@@ -208,6 +217,13 @@ const documentIsLoaded = () => {
       }, 3000);
     }
   });
+
+  const receivedObject = localStorage.getItem('dataSaved');
+  if (receivedObject !== null) {
+    console.log(receivedObject);
+  } else {
+    console.log('nothing there');
+  }
 };
 
 window.onload = documentIsLoaded;
