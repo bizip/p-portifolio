@@ -188,7 +188,7 @@
           with it
         </p>
       </div>
-      <form action="https://formspree.io/f/xpzbleyv" method="post">
+      <form action="https://formspree.io/f/xpzbleyv" id="contact-form" method="post">
         <ul>
           <li>
             <label for="name"
@@ -215,12 +215,16 @@
             <label>
               <textarea
                 class="text-area"
+                id="contact-description"
                 name="subject"
                 placeholder="Write your message here"
                 required
                 maxlength="500"
               ></textarea>
             </label>
+          </li>
+          <li class="message">
+            <p id="message"></p>
           </li>
           <li class="btn">
             <button type="submit" class="hoved">Get In Touch</button>

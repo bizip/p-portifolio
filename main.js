@@ -97,8 +97,7 @@ const documentIsLoaded = () => {
   const workCard = document.getElementById('work__card');
   workCard.innerHTML = projectSection
     .map(
-      (el, index) => `   <article class="single_work ${
-        index % 2 !== 0 ? 'zig-zag' : ''
+      (el, index) => `   <article class="single_work ${index % 2 !== 0 ? 'zig-zag' : ''
       }">
     <img src="${el.image}" class="card-image" alt="TONIC services" />
     <div class="single_work_details">
@@ -115,8 +114,7 @@ const documentIsLoaded = () => {
             <li>${el.popupData.languages[1]}</li>
             <li>${el.popupData.languages[2]}</li>
         </ul>
-        <button type="submit" data-id=${
-  el.id
+        <button type="submit" data-id=${el.id
 } class="hoved dataTarget">See Project</button>
     </div>
   
@@ -182,6 +180,33 @@ const documentIsLoaded = () => {
         document.body.style.overflowY = 'auto';
       });
     });
+  });
+
+  // form validation
+  const formInput = document.getElementById('contact-form');
+  const formEmail = document.getElementById('email');
+  const displayMessage = document.querySelector('.message');
+  const messageContent = document.getElementById('message');
+
+  const hasUpperCase = (input) => input.toLowerCase() !== input;
+  formInput.addEventListener('submit', (e) => {
+    e.preventDefault();
+    if (hasUpperCase(formEmail.value)) {
+      displayMessage.style.display = 'flex';
+      messageContent.style.color = 'red';
+      messageContent.textContent = 'Try again, an email should be only lower case letter.';
+      setTimeout(() => {
+        displayMessage.style.display = 'none';
+      }, 3000);
+    } else {
+      displayMessage.style.display = 'flex';
+      messageContent.style.color = '#6070ff';
+      messageContent.textContent = 'Success, I will get back to you soon.';
+      setTimeout(() => {
+        formInput.reset();
+        displayMessage.style.display = 'none';
+      }, 3000);
+    }
   });
 };
 

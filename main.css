@@ -581,6 +581,19 @@ p {
   border-radius: 8px;
 }
 
+.message {
+  display: none;
+  justify-content: center;
+}
+
+#message {
+  width: 95%;
+  padding: 2rem 2rem;
+  border-radius: 8px;
+  color: #6070ff;
+  background-color: #ffff;
+}
+
 .text-area {
   height: 170px;
   width: 95%;
@@ -676,6 +689,11 @@ p {
 @media (min-width: 900px) {
   html {
     font-size: 62.5%;
+  }
+
+  .message {
+    display: none;
+    justify-content: center;
   }
 
   .popup-page {
