@@ -98,7 +98,7 @@ const documentIsLoaded = () => {
   workCard.innerHTML = projectSection
     .map(
       (el, index) => `   <article class="single_work ${index % 2 !== 0 ? 'zig-zag' : ''
-        }">
+      }">
     <img src="${el.image}" class="card-image" alt="TONIC services" />
     <div class="single_work_details">
         <h3>${el.name}</h3>
@@ -115,7 +115,7 @@ const documentIsLoaded = () => {
             <li>${el.popupData.languages[2]}</li>
         </ul>
         <button type="submit" data-id=${el.id
-        } class="hoved dataTarget">See Project</button>
+} class="hoved dataTarget">See Project</button>
     </div>
   
   </article>`,
