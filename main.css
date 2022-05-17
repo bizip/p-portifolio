@@ -53,7 +53,7 @@ button:active {
   background-size: cover;
   background-position: left;
   padding: 0 2rem 0 2rem;
-  padding-top: 2rem;
+  /* padding-top: 2rem; */
   border-radius: 0 0 0 120px;
   padding-bottom: 5rem;
 }
@@ -132,7 +132,7 @@ p {
   border: 1px solid #dfe1e6;
   box-sizing: border-box;
   border-radius: 16px;
-  margin: 88px 0;
+  margin: 4rem 0;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   justify-content: center;
@@ -638,7 +638,7 @@ p {
 
 .content-header {
   padding: 0;
-  margin: 12rem 2rem 3rem 1rem;
+  margin: 9rem 2rem 3rem 1rem;
 }
 
 .navigation {
@@ -729,7 +729,7 @@ p {
 
   .single_work {
     grid-template-columns: repeat(2, 1fr);
-    max-height: 100rem;
+    max-height: 40rem !important;
   }
 
   .single_work_details {
@@ -741,11 +741,12 @@ p {
   }
 
   .single_work img {
-    height: auto;
     width: 100%;
-    object-fit: cover;
+    height: 100%;
+    max-height:380px;
+    object-fit:contain;
     border-radius: 8px;
-    padding: 1.6rem;
+    padding: 1.6rem 0;
     transition: all 0.4s ease-out;
   }
 
@@ -769,7 +770,7 @@ p {
 
   .content-header {
     padding: 0;
-    margin: 24rem 10rem 0 10rem;
+    margin: 17rem 10rem 0 10rem;
   }
 
   .contact-form {

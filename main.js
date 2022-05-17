@@ -36,13 +36,13 @@ const documentIsLoaded = () => {
   const projectSection = [
     {
       id: 1,
-      name: 'Tonic',
+      name: 'Scratch Day',
       description:
-        'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-      image: './img/gh.svg',
-      featured: ['CANOPY', 'Back End Dev', '2015'],
-      linkToLive: 'https://bizip.github.io/p-portifolio/',
-      linkToSource: 'https://github.com/bizip/p-portifolio',
+        'Hosting grobal scratch day event with features speakers',
+      image: './img/project1.PNG',
+      featured: ['SCRATCH', 'Front End Dev', '2022'],
+      linkToLive: 'https://bizip.github.io/Scratch-day/',
+      linkToSource: 'https://github.com/bizip/Scratch-day',
       popupData: {
         languages: [
           'html',
@@ -56,39 +56,39 @@ const documentIsLoaded = () => {
     },
     {
       id: 2,
-      name: 'Multi-Post Stories',
+      name: 'Find images',
       description:
-        'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-      image: './img/pro.svg',
-      featured: ['CANOPY', 'Back End Dev', '2015'],
-      linkToLive: 'https://bizip.github.io/p-portifolio/',
-      linkToSource: 'https://github.com/bizip/p-portifolio',
+        'You can find images by Id simply type image number and wait for response',
+      image: './img/imagef.PNG',
+      featured: ['IMAGE', 'Back End Dev', '2015'],
+      linkToLive: 'https://bizip.github.io/find-images/',
+      linkToSource: 'https://github.com/bizip/find-images',
       popupData: {
         languages,
       },
     },
     {
       id: 3,
-      name: 'Facebook 360',
+      name: 'Todo List',
       description:
-        'Exploring the future of media in Facebooks first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
-      image: './img/work_image.PNG',
+        'Planning your daily activities, and make life easier in the process of achieving your goal',
+      image: './img/todo.PNG',
       featured: ['Facebook', 'Full stack Dev', '2015'],
-      linkToLive: 'https://bizip.github.io/p-portifolio/',
-      linkToSource: 'https://github.com/bizip/p-portifolio',
+      linkToLive: 'https://bizip.github.io/todo-list/',
+      linkToSource: 'https://github.com/bizip/todo-list',
       popupData: {
         languages,
       },
     },
     {
       id: 4,
-      name: 'Uber Navigation',
+      name: 'consumption manager',
       description:
-        'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+        'Use graph to determine the leve of consumption accoding to the year',
       image: './img/multpost.PNG',
-      featured: ['Uber', 'Full stack Dev', '2015'],
-      linkToLive: 'https://bizip.github.io/p-portifolio/',
-      linkToSource: 'https://github.com/bizip/p-portifolio',
+      featured: ['Uber', 'Full stack Dev', '2019'],
+      linkToLive: 'https://github.com/bizip/consumption-manager/tree/master',
+      linkToSource: 'https://github.com/bizip/consumption-manager/tree/master',
       popupData: {
         languages,
       },
@@ -98,7 +98,7 @@ const documentIsLoaded = () => {
   workCard.innerHTML = projectSection
     .map(
       (el, index) => `   <article class="single_work ${index % 2 !== 0 ? 'zig-zag' : ''
-      }">
+        }">
     <img src="${el.image}" class="card-image" alt="TONIC services" />
     <div class="single_work_details">
         <h3>${el.name}</h3>
@@ -115,7 +115,7 @@ const documentIsLoaded = () => {
             <li>${el.popupData.languages[2]}</li>
         </ul>
         <button type="submit" data-id=${el.id
-} class="hoved dataTarget">See Project</button>
+        } class="hoved dataTarget">See Project</button>
     </div>
   
   </article>`,
@@ -159,16 +159,16 @@ const documentIsLoaded = () => {
                <li>${search.popupData.languages[5]}</li>
                </ul>
                <ul class="popup-links">
-               <form action="https://bizip.github.io/p-portifolio/">
+               <form action="${search.linkToLive}">
                    <li>
                        <button type="submit" class="hoved btn-mobile">See Live <span><img src="./img/Icon.svg" alt="Live project link"></span> </button>
                    </li>
-               <form>
-                   <form action="https://github.com/bizip/p-portifolio">
+               </form>
+                   <form action="${search.linkToSource}">
                    <li>
                        <button type="submit" class="hoved btn-mobile">See source <span><img src="./img/githubIcon.svg" alt="Source code link"></span></button>
                    </li>
-                   <form>
+                </form>
                </ul>
            </div>
      </div>
