@@ -56,13 +56,13 @@ const documentIsLoaded = () => {
     },
     {
       id: 2,
-      name: 'Find images',
+      name: 'Tv maze',
       description:
-        'You can find images by Id simply type image number and wait for response',
-      image: './img/imagef.PNG',
-      featured: ['IMAGE', 'Back End Dev', '2015'],
-      linkToLive: 'https://bizip.github.io/find-images/',
-      linkToSource: 'https://github.com/bizip/find-images',
+        'Movies website that keep you updated with the top rated and most popular movies I have contributed in a team of two.',
+      image: './img/maze.PNG',
+      featured: ['Movies', 'Front End Dev', '2022'],
+      linkToLive: 'https://unrivaled-alfajores-11e018.netlify.app/',
+      linkToSource: 'https://github.com/yosefHesham/TvMaze-Capstone',
       popupData: {
         languages,
       },
@@ -73,7 +73,7 @@ const documentIsLoaded = () => {
       description:
         'Planning your daily activities, and make life easier in the process of achieving your goal',
       image: './img/todo.PNG',
-      featured: ['Facebook', 'Full stack Dev', '2015'],
+      featured: ['Facebook', 'Front End Dev', '2022'],
       linkToLive: 'https://bizip.github.io/todo-list/',
       linkToSource: 'https://github.com/bizip/todo-list',
       popupData: {
@@ -82,13 +82,13 @@ const documentIsLoaded = () => {
     },
     {
       id: 4,
-      name: 'consumption manager',
+      name: 'Book store',
       description:
-        'Use graph to determine the leve of consumption accoding to the year',
-      image: './img/multpost.PNG',
-      featured: ['Uber', 'Full stack Dev', '2019'],
-      linkToLive: 'https://github.com/bizip/consumption-manager/tree/master',
-      linkToSource: 'https://github.com/bizip/consumption-manager/tree/master',
+        'It is called bookstore and it is going to display a lisk of books from store and a user will be able to add new book and even choose its corresponding category. Build with (React/Redux).',
+      image: './img/book.PNG',
+      featured: ['Personal', 'Full stack Dev', '2022'],
+      linkToLive: 'https://github.com/bizip/book-store',
+      linkToSource: 'https://github.com/bizip/book-store',
       popupData: {
         languages,
       },
@@ -98,7 +98,7 @@ const documentIsLoaded = () => {
   workCard.innerHTML = projectSection
     .map(
       (el, index) => `   <article class="single_work ${index % 2 !== 0 ? 'zig-zag' : ''
-      }">
+        }">
     <img src="${el.image}" class="card-image" alt="TONIC services" />
     <div class="single_work_details">
         <h3>${el.name}</h3>
@@ -115,7 +115,7 @@ const documentIsLoaded = () => {
             <li>${el.popupData.languages[2]}</li>
         </ul>
         <button type="submit" data-id=${el.id
-} class="hoved dataTarget">See Project</button>
+        } class="hoved dataTarget">See Project</button>
     </div>
   
   </article>`,
