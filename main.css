@@ -437,6 +437,11 @@ p {
   align-items: center;
 }
 
+.image-list img {
+  width: 4rem;
+  height: 4rem
+}
+
 .flamewok-span {
   transform: rotate(180deg);
 }
@@ -757,6 +762,7 @@ p {
   .language-list {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .content-header {
