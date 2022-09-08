@@ -438,7 +438,8 @@ p {
   align-items: center;
 }
 
-#tohide {
+#tohide,
+#tohideskills {
   display: none;
 }
 
