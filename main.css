@@ -402,6 +402,7 @@ p {
 .languages-title {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
   margin-top: 1rem;
   margin: 1.5rem 0;
 }
@@ -1152,4 +1153,12 @@ h1 span:nth-child(14) {
   100% {
     top: -20px;
   }
+}
+
+.single_frame {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center
 }
