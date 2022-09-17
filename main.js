@@ -69,9 +69,9 @@ const documentIsLoaded = () => {
     },
     {
       id: 3,
-      name: 'Dudject App',
+      name: 'Budget tracker',
       description:
-        'Trucking you expenses based on the caegories and on readme of he projec there is a video demonstrations and link to live project',
+        'Tracking you expenses based on the categories and the readme of the project there is a video demonstrations and link to live project',
       image: './img/banner.PNG',
       featured: ['Microverse', 'Full stack Dev', '2022'],
       linkToLive: 'https://budgetap.herokuapp.com/',
