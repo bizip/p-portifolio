@@ -69,13 +69,13 @@ const documentIsLoaded = () => {
     },
     {
       id: 3,
-      name: 'Todo List',
+      name: 'Dudject App',
       description:
-        'Planning your daily activities, and make life easier in the process of achieving your goal',
-      image: './img/todo.PNG',
-      featured: ['Facebook', 'Front End Dev', '2022'],
-      linkToLive: 'https://bizip.github.io/todo-list/',
-      linkToSource: 'https://github.com/bizip/todo-list',
+        'Trucking you expenses based on the caegories and on readme of he projec there is a video demonstrations and link to live project',
+      image: './img/banner.PNG',
+      featured: ['Microverse', 'Full stack Dev', '2022'],
+      linkToLive: 'https://budgetap.herokuapp.com/',
+      linkToSource: 'https://github.com/bizip/budget_app',
       popupData: {
         languages,
       },
@@ -98,7 +98,7 @@ const documentIsLoaded = () => {
   workCard.innerHTML = projectSection
     .map(
       (el, index) => `   <article class="single_work ${index % 2 !== 0 ? 'zig-zag' : ''
-      }">
+        }">
     <img src="${el.image}" class="card-image" alt="TONIC services" />
     <div class="single_work_details">
         <h3>${el.name}</h3>
@@ -115,7 +115,7 @@ const documentIsLoaded = () => {
             <li>${el.popupData.languages[2]}</li>
         </ul>
         <button type="submit" data-id=${el.id
-} class="hoved dataTarget">See Project</button>
+        } class="hoved dataTarget">See Project</button>
     </div>
   
   </article>`,
