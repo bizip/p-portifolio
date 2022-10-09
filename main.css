@@ -689,6 +689,21 @@ p {
   margin-top: 2rem;
 }
 
+@media (max-width: 375px) {
+  html {
+    font-size: 50%;
+  }
+
+  .h1,
+  .bum {
+    font-size: 4rem !important;
+  }
+
+  .single_work_details h3 {
+    margin: 5% 0;
+  }
+}
+
 @media (min-width: 900px) {
   html {
     font-size: 62.5%;
