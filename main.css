@@ -701,6 +701,23 @@ p {
   .single_work_details h3 {
     margin: 5% 0;
   }
+
+  .logo-text {
+    max-width: 12rem;
+    display: block;
+    animation-name: spinner;
+    animation-duration: 1.5s;
+  }
+
+  @keyframes spinner {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
 }
 
 @media (min-width: 900px) {
