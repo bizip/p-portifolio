@@ -631,8 +631,7 @@ p {
 }
 
 .logo-text {
-  color: #6070ff;
-  fill: #6070ff;
+  max-width: 18rem;
 }
 
 .for-desktop {
@@ -687,6 +686,38 @@ p {
 
 .popup-page__nav:not(:first-child) {
   margin-top: 2rem;
+}
+
+@media (max-width: 375px) {
+  html {
+    font-size: 50%;
+  }
+
+  .h1,
+  .bum {
+    font-size: 4rem !important;
+  }
+
+  .single_work_details h3 {
+    margin: 5% 0;
+  }
+
+  .logo-text {
+    max-width: 12rem;
+    display: block;
+    animation-name: spinner;
+    animation-duration: 1.5s;
+  }
+
+  @keyframes spinner {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
 }
 
 @media (min-width: 900px) {
