@@ -1098,7 +1098,7 @@ p {
 }
 
 h1 span:nth-child(2) {
-  -webkit-animation-delay: 0.1s;
+  -webkit-animation-delay: 0.2s;
 }
 
 h1 span:nth-child(3) {
@@ -1162,4 +1162,16 @@ h1 span:nth-child(14) {
   justify-content: space-between;
   width: 100%;
   align-items: center
+}
+
+
+.my_img {
+  float: left;
+  height: 250px;
+  margin: 1rem;
+}
+
+.square p {
+  text-align: justify;
+  font-size: 1.5rempx;
 }
