@@ -39,7 +39,7 @@ const documentIsLoaded = () => {
       name: 'Manager Dashboard',
       description:
         'It is a VIP manager dashboard that will display all statistical data related to VIP manager. I have used ReactJS along with chartJS',
-      image: 'https://drive.google.com/file/d/1o0fgSlhCEVmVIw9DLjtcqbg-VNXgGFat/view?usp=sharing',
+      image: './img/dash.PNG',
       featured: ['Dashboard', 'Front End Dev', '2022'],
       linkToLive: 'https://sensational-granita-cbf09c.netlify.app',
       linkToSource: 'https://github.com/bizip/manager_dashboard',
@@ -48,7 +48,7 @@ const documentIsLoaded = () => {
           'React',
           'Firebase',
           'Charts',
-          'React teasting libraly',
+          'React testing library',
           'Sass',
         ],
       },
